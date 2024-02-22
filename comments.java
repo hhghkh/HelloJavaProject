@@ -19,4 +19,14 @@ public class comments {
 
         System.out.println("3. We use /** */ for special javadoc comment");
     }
+
+    /**
+     *
+     * @param x
+     * @param y
+     * @return
+     */
+    public static int add(int x, int y){
+        return (x + y);
+    }
 }

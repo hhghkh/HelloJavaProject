@@ -43,15 +43,15 @@ public class JavaPrimitives {
         System.out.println(apostrophe);
 
         //insert a double quote
-        char dobleQuoute = '"';
-        System.out.println(dobleQuoute);
+        char doubleQuoute = '"';
+        System.out.println(doubleQuoute);
 
         //create a euro pound
         char euroPound= '\u00A3';
         System.out.println(euroPound);
 
-        char thauBhat = '\u0E3F';
-        System.out.println(thauBhat);
+        char thaiBhat = '\u0E3F';
+        System.out.println(thaiBhat);
 
         char infinity = '\u221E';
         System.out.println(infinity);
@@ -63,12 +63,12 @@ public class JavaPrimitives {
         String greetingsMessage = "Hello Everyone";
         System.out.println(greetingsMessage);
 
-        //3. integral data types(byte, short, int and long)
+        //3. integral data types (byte, short, int and long)
         //integral data types uses three forms ->decimal, octal and hexadecimal
         //examples: 2(decimal), 077(octal), 0x13(hexadecimal)
-        //the fefault type of integral data types is int for integer
-        //for instance you can define a long valuue of the integer by using capital letter L or l
-        //e.g 10L
+        //the default type of integral data types is int for integer
+        //for instance you can define a long value of the integer by using capital letter L or l
+        //e.g. 10L
 
         //byte-> range -128 to +127 ->length 8bits(1byte)
         //to create a byte data type we use the byte keyword

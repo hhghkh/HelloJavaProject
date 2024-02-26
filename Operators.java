@@ -128,6 +128,7 @@ public class Operators {
         //TRUE             FALSE
         //FALSE            TRUE
 
+
         boolean isRaining= true;
         boolean isRunning= false;
 

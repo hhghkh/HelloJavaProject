@@ -20,43 +20,44 @@ public class ScannerExercise {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int milk;
-        int bread;
-        int eggs;
-        int sugar;
-        int tmasala;
+        System.out.println("============================");
+        System.out.println("\t\tDECEMBER1");
+        System.out.println("============================");
 
         System.out.print("qty of milk: ");
-        milk= sc.nextInt();
+        int milk= sc.nextInt();
         System.out.print("qty of bread: ");
-        bread = sc.nextInt();
+        int bread = sc.nextInt();
         System.out.print("qty of eggs: ");
-        eggs= sc.nextInt();
+        int eggs= sc.nextInt();
         System.out.print("qty of sugar: ");
-        sugar= sc.nextInt();
+        int sugar= sc.nextInt();
         System.out.print("qty of tmasala: ");
-        tmasala= sc.nextInt();
+        int tmasala= sc.nextInt();
 
-        milk = (int) (milk * 67.50);
-        bread = (int) (bread * 95.00);
-        eggs = (int) (eggs * 29.50);
-        sugar = (int) (sugar * 250.00);
-        tmasala = (int) (tmasala * 76.99);
+        double milkPrice = 67.50;
+        double breadPrice = 95.00;
+        double eggsPrice = 29.50;
+        double sugarPrice = 250.00;
+        double tmasalaPrice = 76.99;
 
-        int total;
-        int discount;
 
-        total = milk + bread + eggs + sugar + tmasala;
-        discount = (int) (total * 0.9);
+        double total;
+
+        total = (milk * milkPrice) + (bread * breadPrice) + (eggs * eggsPrice) + (sugar * sugarPrice) + (tmasala * tmasalaPrice);
+        double discountedBalance = (total * 0.9);
+        double discount = (total * 0.1);
+
+        System.out.println("============================");
 
         System.out.println("total price: " + total);
 
         String msg = "";
-        msg = (total > 1000)? "discount applied: 10% \nbalance payable: " + discount  : "";
+        msg = (total > 1000)? "discount applied: " + discount + "\nbalance payable: " + discountedBalance  : "discount applied: 0.00";
 
         System.out.println(msg);
 
-
+        System.out.println("============================");
 
 
         sc.close();

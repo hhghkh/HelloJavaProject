@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class DecisionControlStructures {
     /**
      * decision control structures
@@ -142,14 +144,58 @@ public class DecisionControlStructures {
                 System.out.println("sorry you failed");
         }
 
+        //1. create a java program using switch statement that asks the user for an integer between 1 and 7 inclusive and then outputs the day of the week e.g. if the user entered 1, then output "Sunday"
 
+        //2. ask the user for a color then print if that is their favorite color if it matches with the one in the system
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("input number between 1 and 7: ");
+        int no = sc.nextInt();
 
+        switch (no){
+            case 1:
+                System.out.println("sunday");
+                break;
+            case 2:
+                System.out.println("monday");
+                break;
+            case 3:
+                System.out.println("tuesday");
+                break;
+            case 4:
+                System.out.println("wednesday");
+                break;
+            case 5:
+                System.out.println("thursday");
+                break;
+            case 6:
+                System.out.println("friday");
+                break;
+            case 7:
+                System.out.println("saturday");
+            default:
+                System.out.println("error: only input numbers between 1 and 7");
+        }
 
+        String favoriteColor = "red";
+        System.out.println("input color: ");
+        favoriteColor = sc.next();
 
+        switch (favoriteColor.toLowerCase()){
+            case "yellow":
+                System.out.println("your favorite color is: " + favoriteColor);
+                break;
+            default:
+                System.out.println("we don't have your favorite color");
+
+        }
 
 
         }
+
+
+
+
 
 }
 

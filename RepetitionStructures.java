@@ -43,13 +43,34 @@ public class RepetitionStructures {
         System.out.println("===========");
         //output: 15 12 9 6 3 0 -3 -6 -9 -12 -15
 
-        int z = 999;
-        while (z > -9999){
-            System.out.print(z + "\t");
+        int z = 15;
+        while (z >= -15){
+            System.out.println(z );
             z -=3;
         }
+        System.out.println("===========");
 
+        //2. do...while
+        //statements inside a do while loop are executed several times as long as the condition is satisfied/met
 
+        //it's similar to a while loop, the main difference is that statements inside a do-while loop are executed at least once
 
+        //syntax
+
+        //do {
+        //    statement1;
+        //    statement2;
+        // } while (boolean_expression);
+
+        //output 1 2 3 4 5 6 7 8 9 10
+
+        int m = 1;
+
+        do {
+            System.out.println(m);
+            m +=1;
+        } while (m <= 10);
+
+        System.out.println("=======================");
     }
 }

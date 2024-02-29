@@ -90,7 +90,66 @@ public class DecisionControlStructures {
             System.out.println("sorry you failed!");
         }
 
+        //switch statement
+        //a switch allows branching on multiple outcomes
+        //it has the following syntax:
 
-    }
+        //switch(switch_expression){
+        //    case case_selector1:
+        //        statement1;
+        //        statement2;
+        //        break;
+        //    case case_selector2:
+        //        statement1;
+        //        statement2;
+        //        break;
+        //    default:
+        //        statement1;
+        //        statement2;
+        // }
+
+        //where:
+        // -> switch_expression: is an integer or character expression
+        // -> case_selector1, case_selector2 and so on are unique integer or character constants
+
+        //when a switch statement is encountered:-
+
+        //java first evaluates the switch expression and jumps the case whose selector/label matches value of the expression
+
+        //the program executes the statements in order from that point on until a break statement is encountered, skipping to the first statement after the end of the switch structure
+
+        //if none of the cases are satisfied, the default block is executed. take note however, that the default part is optional
+
+        //note:
+        //unlike the if statement the multiple statements in the switch are executed without including the curly braces
+        //when a case in a switch statement has been matched, all the statements associated with that case are executed. not only that, the statements associated with succeeding cases are also executed
+        //to prevent the program from executing statements in the subsequent cases, we use a break statement as our last statement
+
+        System.out.println("==========================");
+        int score = 90;
+
+        switch (score){
+            case 100:
+                System.out.println("excellent");
+                break;
+            case 90:
+                System.out.println("good job");
+                break;
+            case 80:
+                System.out.println("study jarder");
+                break;
+            default:
+                System.out.println("sorry you failed");
+        }
+
+
+
+
+
+
+
+
+        }
+
 }
 
